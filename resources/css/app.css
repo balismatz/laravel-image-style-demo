@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans:
+        "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+}
+
+@layer components {
+    .layout-container {
+        margin-inline: auto;
+        max-width: var(--container-7xl);
+        padding-inline: calc(var(--spacing) * 6);
+        @variant lg {
+            padding-inline: calc(var(--spacing) * 8);
+        }
+    }
+}
