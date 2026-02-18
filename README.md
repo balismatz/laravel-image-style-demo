@@ -39,11 +39,11 @@ The following examples are used to display styled images in this demo:
 
 #### First Example
 
-A simple example where you can pass:
+A simple example where you can pass the following:
 
-1. The image style class (i.e. [App\ImageStyles\User\Thumbnail::class](app/ImageStyles/User/Thumbnail.php)) or ID (i.e. `user-thumbnail`).
+1. The image style class (e.g., [App\ImageStyles\User\Thumbnail::class](app/ImageStyles/User/Thumbnail.php)) or ID (e.g., `user-thumbnail`).
 2. The storage path of the original image.
-3. The style parameters (i.e. `['text' => 'Sample text']`).
+3. The style parameters (e.g., `['text' => 'Sample text']`).
 4. A boolean indicating whether the styled image should be recreated on every request.
 
 <br/>
@@ -60,7 +60,7 @@ A simple example where you can pass:
 
 An alternative example where, instead of passing the parameters individually, you can pass the styled image information or the URL directly.
 
-In contrast to the first example, this approach allows you to use all the capabilities provided by the [imageStyle()->imageInformation()](https://github.com/balismatz/laravel-image-style/blob/1.x/src/ImageStyle.php#L62) method.
+In contrast to the first example, this approach allows you to use all the capabilities of the [imageStyle()->imageInformation()](https://github.com/balismatz/laravel-image-style/blob/1.x/src/ImageStyle.php#L62) method.
 
 <br/>
 
@@ -78,11 +78,11 @@ In contrast to the first example, this approach allows you to use all the capabi
 
 #### First Example
 
-A simple example where you can pass:
+A simple example where you can pass the following:
 
-1. The image style classes (i.e. [[App\ImageStyles\Section\Banner\Sm::class](app/ImageStyles/Section/Banner/Sm.php), [App\ImageStyles\Section\Banner\Md::class](app/ImageStyles/Section/Banner/Md.php)]) or IDs (i.e. `['section-banner-sm', 'section-banner-md']`), or a mix of classes and IDs, as an array or collection. Each media query (i.e. `['(width >= 640px)', '(width >= 1024px)']`) must be defined as the key for its corresponding image style value.
+1. The image style classes (e.g., [[App\ImageStyles\Section\Banner\Sm::class](app/ImageStyles/Section/Banner/Sm.php), [App\ImageStyles\Section\Banner\Md::class](app/ImageStyles/Section/Banner/Md.php)]) or IDs (e.g., `['section-banner-sm', 'section-banner-md']`), or a mix of classes and IDs, as an array or collection. Each media query (e.g., `['(width >= 640px)', '(width >= 1024px)']`) must be defined as the key for its corresponding image style value.
 2. The storage path of the original image.
-3. The style parameters (i.e. `['text' => 'Sample text']`).
+3. The style parameters (e.g., `['text' => 'Sample text']`).
 4. A boolean indicating whether the styled images should be recreated on every request.
 5. A fallback image style that will be used when none of the media conditions evaluate to true. If not provided, the first image style in the array or collection will be used as the fallback.
 
@@ -102,7 +102,7 @@ An alternative example where, instead of passing the parameters individually, yo
 
 In contrast to the first example, you can:
 
-1. Use all the capabilities provided by the [imageStyle()->imageInformation()](https://github.com/balismatz/laravel-image-style/blob/1.x/src/ImageStyle.php#L62) method.
+1. Use all the capabilities of the [imageStyle()->imageInformation()](https://github.com/balismatz/laravel-image-style/blob/1.x/src/ImageStyle.php#L62) method.
 2. Use a different image per media query (e.g., `image-mobile.jpg` for mobile media queries and `image.jpg` for other media queries).
 3. Provide additional formats alongside the default format (see [imageStyle()->imageInformationToWebp()](https://github.com/balismatz/laravel-image-style/blob/1.x/src/ImageStyle.php#L101)). A common use case is to maintain "JPG" images while also providing "WebP" alternatives, allowing support for browsers that do not support "WebP".
 
@@ -119,7 +119,7 @@ In contrast to the first example, you can:
 > [!NOTE]
 > All image styles are located in the [app/ImageStyles](app/ImageStyles) directory.
 >
-> The image style names used in this demo are generic; you may use any naming convention that best suits your application.
+> The image style names and structure used in this demo are generic. You may use any naming convention and structure that best suits your application.
 
 ## Contributing
 
